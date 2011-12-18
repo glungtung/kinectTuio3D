@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxKinect\src\ofxKinect.cpp">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxKinect\src\ofxKinectCalibration.cpp">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxKinect\src\ofxKinectPlayer.cpp">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxKinect\src\ofxKinectRecorder.cpp">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp">
+      <Filter>addons\ofxXmlSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp">
+      <Filter>addons\ofxXmlSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp">
+      <Filter>addons\ofxXmlSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
+      <Filter>addons\ofxXmlSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxCvKalman\ofxCvKalman.cpp">
+      <Filter>ofxCvKalman</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.cpp">
+      <Filter>ofxMSAInteractiveObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxOpenCVBlobTrackingExt\ofxCvBlobTracker.cpp">
+      <Filter>ofxOpenCVBlobTrackingExt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiButton.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiColorPicker.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiComboBox.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiContent.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiFPSCounter.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiMovieSlider.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiQuadWarp.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSlider2d.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiTitle.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiToggle.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiConfig.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiControl.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiPage.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiToo.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiValueControl.cpp">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioServer.cpp">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioTime.cpp">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioClient.cpp">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\ofxTuioServer.cpp">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\ofxTuioClient.cpp">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.cpp">
+      <Filter>addons\ofxOsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.cpp">
+      <Filter>addons\ofxOsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.cpp">
+      <Filter>addons\ofxOsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscSender.cpp">
+      <Filter>addons\ofxOsc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvBlob.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvConstants.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvMain.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxOpenCv.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="..\..\..\addons\ofxKinect\src\ofxBase3DVideo.h">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxKinect\src\ofxKinectRecorder.h">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxKinect\src\ofxKinect.h">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxKinect\src\ofxKinectCalibration.h">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxKinect\src\ofxKinectPlayer.h">
+      <Filter>addons\ofxKinect\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxMatrix3x3.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxMatrix4x4.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxPoint2f.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxPoint3f.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxPoint4f.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxQuaternion.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxVec2f.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxVec3f.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxVec4f.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxVectorMath.h">
+      <Filter>addons\ofxVectorMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxThread\src\ofxThread.h">
+      <Filter>addons\ofxThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h">
+      <Filter>addons\ofxXmlSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h">
+      <Filter>addons\ofxXmlSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxCvKalman\ofxCvKalman.h">
+      <Filter>ofxCvKalman</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.h">
+      <Filter>ofxMSAInteractiveObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVBlobTrackingExt\ofxCvBlobTracker.h">
+      <Filter>ofxOpenCVBlobTrackingExt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVBlobTrackingExt\ofxCvTrackedBlob.h">
+      <Filter>ofxOpenCVBlobTrackingExt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxOpenCVBlobTrackingExt\ofxCvTrackingConstants.h">
+      <Filter>ofxOpenCVBlobTrackingExt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiButton.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiColorPicker.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiComboBox.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiContent.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiFPSCounter.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiMovieSlider.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiQuadWarp.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSlider2d.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderBase.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderFloat.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderInt.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiTitle.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiToggle.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiConfig.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiControl.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiIncludes.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiPage.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiToo.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxSimpleGuiToo\src\ofxSimpleGuiValueControl.h">
+      <Filter>ofxSimpleGuiToo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioContainer.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioCursor.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioListener.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioObject.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioPoint.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioServer.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioTime.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\core\TuioClient.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\ofxTuioClient.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTuio\ofxTuioWrapper\ofxTuioServer.h">
+      <Filter>ofxTuioWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\ip\IpEndpointName.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\ip\NetworkingUtils.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\ip\PacketListener.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\ip\TimerListener.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\ip\UdpSocket.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\osc\MessageMappingOscPacketListener.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\osc\OscException.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\osc\OscHostEndianness.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\osc\OscOutboundPacketStream.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\osc\OscPacketListener.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\osc\OscPrintReceivedElements.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\osc\OscReceivedElements.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\include\osc\OscTypes.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOsc.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscArg.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscSender.h">
+      <Filter>addons\ofxOsc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="addons">
+      <UniqueIdentifier>{fb9e352c-c0b7-4a51-8394-a95887d8e1e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOpenCV">
+      <UniqueIdentifier>{d6eac2d3-90b8-45fa-ba9a-e2c34eea2695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOpenCV\src">
+      <UniqueIdentifier>{6edcfb1c-6e19-4657-9a6a-ee5ff2cf563f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxKinect">
+      <UniqueIdentifier>{17dbc44a-7c2f-4ca0-87d4-63ba5d377287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxKinect\src">
+      <UniqueIdentifier>{47c6e6ca-2b36-4fd0-996d-ccd2530b274a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxCvKalman">
+      <UniqueIdentifier>{11677ed6-ed4d-4c4e-8579-e6d2aad7c1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxMSAInteractiveObject">
+      <UniqueIdentifier>{94c96082-c941-488d-8fa9-8da2eb268d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxTuioWrapper">
+      <UniqueIdentifier>{0fdb24af-068c-48c0-b329-eddbe609d902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxOpenCVBlobTrackingExt">
+      <UniqueIdentifier>{a17e282e-ec2a-4e53-8102-925c1c87652e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxSimpleGuiToo">
+      <UniqueIdentifier>{c48b58b8-4f69-4425-ba6c-377df8f1cb7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxXmlSettings">
+      <UniqueIdentifier>{53ce1756-8896-4b3e-addc-f91c882151c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxThread">
+      <UniqueIdentifier>{02725a67-0de5-41ac-9e19-07719dfdb4d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxVectorMath">
+      <UniqueIdentifier>{a92002bf-082e-4ff6-9e8b-c607ac8bf7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc">
+      <UniqueIdentifier>{738dc160-e2d1-44fa-a84f-c1fb3946579f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

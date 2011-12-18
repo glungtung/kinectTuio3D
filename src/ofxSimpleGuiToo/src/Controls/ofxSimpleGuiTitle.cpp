@@ -1,4 +1,4 @@
-#define   ofSetHexColor ofSetColor
+//#define   ofSetHexColor ofSetColor
 
 #include "ofxSimpleGuiTitle.h"
 

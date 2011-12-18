@@ -8,6 +8,7 @@
 #include "ofxCvTrackedBlob.h"
 #include "ofxCvTrackingConstants.h"
 #include "ofxTuioServer.h"
+#include "ofxXmlSettings.h"
 
 
 
@@ -50,6 +51,8 @@ class testApp : public ofSimpleApp, public ofxCvBlobListener
 
         ofxTuioServer server;
         TuioCursor* cursor;
+
+		ofxXmlSettings XML;
     
 };
 

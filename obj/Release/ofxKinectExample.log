@@ -1,0 +1,99 @@
+﻿Build started 01/10/2011 11:22:39.
+     1>Project "D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\ofxKinectExample.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "obj\Release\ofxKinectExample.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Isrc\ofxSimpleGuiToo\src\Controls /I..\..\..\addons\ofxXmlSettings\libs /I..\..\..\addons\ofxXmlSettings\src /Isrc\ofxOpenCVBlobTrackingExt /I..\..\..\addons\ofxVectorMath\src /I..\..\..\addons\ofxTuio\ofxTuioWrapper\ /I..\..\..\addons\ofxTuio\ofxTuioWrapper\core /I..\..\..\addons\ofxOsc\libs\oscpack\include /I..\..\..\addons\ofxOsc\libs\oscpack\include\osc /I..\..\..\addons\ofxOsc\libs\oscpack\include\ip /Isrc\ofxSimpleGuiToo\src /Isrc\ofxCvKalman /Isrc\ofxMSAInteractiveObject\src /I..\..\..\libs\openFrameworks /I..\..\..\libs\openFrameworks\graphics /I..\..\..\libs\openFrameworks\app /I..\..\..\libs\openFrameworks\sound /I..\..\..\libs\openFrameworks\utils /I..\..\..\libs\openFrameworks\communication /I..\..\..\libs\openFrameworks\math /I..\..\..\libs\openFrameworks\video /I..\..\..\libs\openFrameworks\events /I..\..\..\libs\openFrameworks\3d /I..\..\..\libs\openFrameworks\gl /I..\..\..\libs\openFrameworks\types /I..\..\..\libs\cairo\include\cairo /I..\..\..\libs\tess2\include /I..\..\..\libs\glut\include /I..\..\..\libs\rtAudio\include /I..\..\..\libs\quicktime\include /I..\..\..\libs\freetype\include /I..\..\..\libs\freetype\include\freetype2 /I..\..\..\libs\freeImage\include /I..\..\..\libs\fmodex\include /I..\..\..\libs\videoInput\include /I..\..\..\libs\glew\include /I..\..\..\libs\glu\include /I..\..\..\libs\poco\include /I..\..\..\addons /I..\..\..\addons\ofxOpenCv\src /I..\..\..\addons\ofxOpenCv\libs\opencv\include /I..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv /I..\..\..\addons\ofxKinect\src /I..\..\..\addons\ofxKinect\libs\libfreenect /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D POCO_STATIC /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\Release\\" /Fd"obj\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\main.cpp src\testApp.cpp
+         main.cpp
+         #warning ofxVec3f has been deprecated.
+         #warning Remove all references to ofxVec3f.h and use ofVec3f instead.
+         testApp.cpp
+         #warning ofxVec3f has been deprecated.
+         #warning Remove all references to ofxVec3f.h and use ofVec3f instead.
+         #warning ofxVectorMath has been deprecated.
+         #warning Remove all references to ofxVectorMath.h and use ofVectorMath instead.
+         #warning ofxVec2f has been deprecated.
+         #warning Remove all references to ofxVec2f.h and use ofVec2f instead.
+         #warning ofxVec4f has been deprecated.
+         #warning Remove all references to ofxVec4f.h and use ofVec4f instead.
+         #warning ofxMatrix3x3 has been deprecated.
+         #warning Remove all references to ofxMatrix3x3.h and use ofMatrix3x3 instead.
+         #warning ofxMatrix4x4 has been deprecated.
+         #warning Remove all references to ofxMatrix4x4.h and use ofMatrix4x4 instead.
+         #warning ofxQuaternion has been deprecated.
+         #warning Remove all references to ofxQuaternion.h and use ofQuaternion instead.
+         Generating Code...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin\ofxKinectExample.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\..\libs\cairo\lib\vs2010 /LIBPATH:..\..\..\libs\glut\lib\vs2010 /LIBPATH:..\..\..\libs\rtAudio\lib\vs2010 /LIBPATH:..\..\..\libs\FreeImage\lib\vs2010 /LIBPATH:..\..\..\libs\freetype\lib\vs2010 /LIBPATH:..\..\..\libs\quicktime\lib\vs2010 /LIBPATH:..\..\..\libs\fmodex\lib\vs2010 /LIBPATH:..\..\..\libs\videoInput\lib\vs2010 /LIBPATH:..\..\..\libs\glew\lib\vs2010 /LIBPATH:..\..\..\libs\glu\lib\vs2010 /LIBPATH:..\..\..\libs\Poco\lib\vs2010 /LIBPATH:..\..\..\libs\tess2\lib\vs2010 /LIBPATH:..\..\..\libs\openFrameworksCompiled\lib\vs2010 /LIBPATH:..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010 /LIBPATH:..\..\..\addons\ofxKinect\libs\libfreenect\lib\vs2010 openframeworksLib.lib "cairo-static.lib" "pixman-1.lib" msimg32.lib OpenGL32.lib GLu32.lib kernel32.lib setupapi.lib glut32.lib rtAudio.lib videoInput.lib libfreetype.lib FreeImage.lib qtmlClient.lib dsound.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib glew32s.lib fmodex_vc.lib glu32.lib Vfw32.lib comctl32.lib PocoFoundationmd.lib PocoNetmd.lib PocoUtilmd.lib PocoXMLmd.lib Ws2_32.lib tess2.lib ..\..\..\addons\ofxOsc\libs\oscpack\lib\vs2010\oscpack.lib ..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010\assimp.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_calib3d220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_contrib220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_core220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_features2d220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_flann220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_gpu220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_highgui220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_imgproc220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_legacy220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ml220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_objdetect220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ts220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_video220.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_lapack.lib ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\zlib.lib freenect.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:atlthunk.lib /NODEFAULTLIB:LIBC.lib /NODEFAULTLIB:LIBCMT /MANIFEST /ManifestFile:"obj\Release\ofxKinectExample.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\bin\ofxKinectExample.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"bin\ofxKinectExample.lib" /MACHINE:X86 obj\Release\ofxKinect.obj
+         obj\Release\ofxKinectCalibration.obj
+         obj\Release\ofxKinectPlayer.obj
+         obj\Release\ofxKinectRecorder.obj
+         obj\Release\ofxCvColorImage.obj
+         obj\Release\ofxCvContourFinder.obj
+         obj\Release\ofxCvFloatImage.obj
+         obj\Release\ofxCvGrayscaleImage.obj
+         obj\Release\ofxCvImage.obj
+         obj\Release\ofxCvShortImage.obj
+         obj\Release\ofxOscBundle.obj
+         obj\Release\ofxOscMessage.obj
+         obj\Release\ofxOscReceiver.obj
+         obj\Release\ofxOscSender.obj
+         obj\Release\TuioClient.obj
+         obj\Release\TuioServer.obj
+         obj\Release\TuioTime.obj
+         obj\Release\ofxTuioClient.obj
+         obj\Release\ofxTuioServer.obj
+         obj\Release\tinyxml.obj
+         obj\Release\tinyxmlerror.obj
+         obj\Release\tinyxmlparser.obj
+         obj\Release\ofxXmlSettings.obj
+         obj\Release\main.obj
+         obj\Release\ofxCvKalman.obj
+         obj\Release\ofxMSAInteractiveObject.obj
+         obj\Release\ofxCvBlobTracker.obj
+         obj\Release\ofxSimpleGuiButton.obj
+         obj\Release\ofxSimpleGuiColorPicker.obj
+         obj\Release\ofxSimpleGuiComboBox.obj
+         obj\Release\ofxSimpleGuiContent.obj
+         obj\Release\ofxSimpleGuiFPSCounter.obj
+         obj\Release\ofxSimpleGuiMovieSlider.obj
+         obj\Release\ofxSimpleGuiQuadWarp.obj
+         obj\Release\ofxSimpleGuiSlider2d.obj
+         obj\Release\ofxSimpleGuiTitle.obj
+         obj\Release\ofxSimpleGuiToggle.obj
+         obj\Release\ofxSimpleGuiConfig.obj
+         obj\Release\ofxSimpleGuiControl.obj
+         obj\Release\ofxSimpleGuiPage.obj
+         obj\Release\ofxSimpleGuiToo.obj
+         obj\Release\ofxSimpleGuiValueControl.obj
+         obj\Release\testApp.obj
+         "D:\OpenFrameworks projects\of_preRelease_v007_vs2010\libs\openFrameworksCompiled\lib\vs2010\openframeworksLib.lib"
+            Creating library bin\ofxKinectExample.lib and object bin\ofxKinectExample.exp
+         ofxKinectExample.vcxproj -> D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\bin\ofxKinectExample.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"bin\ofxKinectExample.exe;#1" /manifest obj\Release\ofxKinectExample.exe.intermediate.manifest
+       PostBuildEvent:
+         Description: adding DLLs and creating data folder
+         xcopy /e /i /y "D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\export\vs2010\*.dll" "D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\bin"
+         if not exist "D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\bin\data" mkdir  "D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\bin\data"
+         
+         xcopy /e /i /y "D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\addons\ofxKinect\libs\libfreenect\lib\vs2010\*.dll" bin
+         :VCEnd
+         D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\export\vs2010\Assimp32.dll
+         D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\export\vs2010\fmodex.dll
+         D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\export\vs2010\fmodexL.dll
+         D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\export\vs2010\FreeImage.dll
+         D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\export\vs2010\FreeType-6.dll
+         D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\export\vs2010\glut32.dll
+         D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\export\vs2010\Zlib.dll
+         7 File(s) copied
+         D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\..\..\..\addons\ofxKinect\libs\libfreenect\lib\vs2010\freenect.dll
+         1 File(s) copied
+       FinalizeBuildStatus:
+         Deleting file "obj\Release\ofxKinectExample.unsuccessfulbuild".
+         Touching "obj\Release\ofxKinectExample.lastbuildstate".
+     1>Done Building Project "D:\OpenFrameworks projects\of_preRelease_v007_vs2010\apps\kinectRaig\kinectTuio3D\ofxKinectExample.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:22.58

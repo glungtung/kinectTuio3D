@@ -1,0 +1,14 @@
+<controls>
+    <SliderFloat_orientation>
+        <name>orientation</name>
+        <value>13.750000</value>
+    </SliderFloat_orientation>
+    <SliderFloat_bottomThreshold>
+        <name>bottomThreshold</name>
+        <value>0.853448</value>
+    </SliderFloat_bottomThreshold>
+    <SliderFloat_topThreshold>
+        <name>topThreshold</name>
+        <value>0.969828</value>
+    </SliderFloat_topThreshold>
+</controls>

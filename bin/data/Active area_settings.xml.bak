@@ -1,0 +1,18 @@
+<controls>
+    <SliderFloat_x1>
+        <name>x1</name>
+        <value>0.075833</value>
+    </SliderFloat_x1>
+    <SliderFloat_y1>
+        <name>y1</name>
+        <value>0.171111</value>
+    </SliderFloat_y1>
+    <SliderFloat_x2>
+        <name>x2</name>
+        <value>0.753333</value>
+    </SliderFloat_x2>
+    <SliderFloat_y2>
+        <name>y2</name>
+        <value>0.823333</value>
+    </SliderFloat_y2>
+</controls>

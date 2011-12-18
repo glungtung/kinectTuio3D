@@ -6,7 +6,7 @@
  *  Copyright 2010 __MyCompanyName__. All rights reserved.
  *
  */
-#define   ofSetHexColor ofSetColor
+//#define   ofSetHexColor ofSetColor
 
 #include "ofxSimpleGuiComboBox.h"
 #include "ofxSimpleGuiPage.h"

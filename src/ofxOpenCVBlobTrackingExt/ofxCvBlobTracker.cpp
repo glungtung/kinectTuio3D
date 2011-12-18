@@ -70,7 +70,7 @@ void ofxCvBlobTracker::draw( float x, float y ) {
 		glEnd();
 	}*/
 
-    ofSetColor( 0xffffff );
+    ofSetHexColor( 0xffffff );
     for( int i=0; i<blobs.size(); i++ ) {
         ostringstream docstring;
         docstring << blobs[i].id << endl;

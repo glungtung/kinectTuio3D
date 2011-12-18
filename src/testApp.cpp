@@ -20,7 +20,7 @@
 //TODO
 // put lerp outside blobtracker, better should be here
 // connect/disconnect from tuio + param in gui
-// fix bug 0 size ROI
+
 
 #include "testApp.h"
 #include "ofxSimpleGuiToo.h"
@@ -28,7 +28,9 @@
 #include "ofxVectorMath.h"
 
 // Maximum (nearset) depth I've obeserved on my kinect
-#define MAXDEPTH 245.0
+#define MAXDEPTH 255.0
+
+//distance from kinect should be 0.75 - 1m
 
 // depth image stuff
 ofxCvGrayscaleImage		depthOrig;
@@ -42,7 +44,8 @@ ofxCvContourFinder		depthContours;
 ofxCvColorImage			colorImageRGB;
 
 
-
+// kinect motor
+float kinectOrientation;
 // depth
 bool	invert;
 bool	mirror;
@@ -75,6 +78,8 @@ float	depthOffset;
 // tracking
 float lerpSpeed = 0.1;
 
+
+
 //ofxVec2f viewRot;
 
 
@@ -103,15 +108,26 @@ void testApp::setup() {
 	
 	colorImageRGB.allocate(kinect.getWidth(), kinect.getHeight());
 	
-	
+	// default values
+	activeAreaVertices[0].x = ofGetWidth()/4.0 / ofGetWidth();
+    activeAreaVertices[0].y = ofGetHeight()/4.0 / ofGetHeight();
+    activeAreaVertices[1].x = ofGetWidth()/4.0*3.0 / ofGetWidth();
+    activeAreaVertices[1].y = ofGetHeight()/4.0*3.0 / ofGetHeight();
+
 	gui.setup();
 	gui.config->gridSize.x = 250;
 
+    gui.addTitle("KINECT VERTICAL ORIENTATION");
+    gui.addSlider("orientation", kinectOrientation, -30, 28);
+
+    gui.addTitle("DEPTH ADJUSTMENT");
     gui.addSlider("bottomThreshold", bottomThreshold, 0, 1);
 	gui.addSlider("topThreshold", topThreshold, 0, 1);
     
     gui.addPage("All params");		// use '[' ']' to cycle through pages, or keys 1-9
     gui.addTitle("DEPTH PRE PROCESSING");
+    gui.addSlider("bottomThreshold", bottomThreshold, 0, 1);
+	gui.addSlider("topThreshold", topThreshold, 0, 1);
 	gui.addToggle("invert", invert);
 	gui.addToggle("mirror", mirror);
 //	gui.addSlider("preBlur", preBlur, 0, 20);
@@ -149,6 +165,13 @@ void testApp::setup() {
 	//	gui.addContent("depthAdaptive", depthAdaptive);
 //	gui.addContent("depthAccum", depthAccum);
 	gui.addContent("depthContours", depthContours);
+
+	// Blue square
+	gui.addPage("Active area");		// use '[' ']' to cycle through pages, or keys 1-9
+	gui.addSlider("x1", activeAreaVertices[0].x, 0, 1);	
+	gui.addSlider("y1", activeAreaVertices[0].y, 0, 1);	
+	gui.addSlider("x2", activeAreaVertices[1].x, 0, 1);	
+	gui.addSlider("y2", activeAreaVertices[1].y, 0, 1);	
 	
 	gui.loadFromXML();
 	gui.setDefaultKeys(true);
@@ -177,10 +200,7 @@ void testApp::setup() {
     blobTracker.setListener( this );
     blobTracker.setLerp(lerpSpeed);
     
-    activeAreaVertices[0].x = ofGetWidth()/4.0 / ofGetWidth();
-    activeAreaVertices[0].y = ofGetHeight()/4.0 / ofGetHeight();
-    activeAreaVertices[1].x = ofGetWidth()/4.0*3.0 / ofGetWidth();
-    activeAreaVertices[1].y = ofGetHeight()/4.0*3.0 / ofGetHeight();
+
 
 	for (int i = 0; i < 2; i++){
 		activeAreaVertices[i].bOver 			= false;
@@ -188,9 +208,12 @@ void testApp::setup() {
 		activeAreaVertices[i].radius = 8;
     }
 
+	XML.loadFile("IP.xml");
+	string IP = XML.getValue("SERVER", "127.0.0.1");
     
     //sends to localhost, port: 3333
-	server.start("default", 0);
+	//server.start("default", 0);
+	server.start((char *)IP.c_str(), 3333);
 	server.setVerbose(true);
 	cursor  = NULL;
 	//cursor[1]  = NULL;
@@ -267,8 +290,10 @@ void testApp::update() {
     //depthContours.setAnchorPoint(x0,x1);
 	// find contours
 	depthContours.findContours(depthProcessed,
-							   minBlobSize * minBlobSize * depthProcessed.getWidth() * depthProcessed.getHeight(),
-							   maxBlobSize * maxBlobSize * depthProcessed.getWidth() * depthProcessed.getHeight(),
+							   minBlobSize * minBlobSize * roiArea.width * roiArea.height,
+							   maxBlobSize * maxBlobSize * roiArea.width * roiArea.height,
+							   //minBlobSize * minBlobSize * depthProcessed.getWidth() * depthProcessed.getHeight(),
+							   //maxBlobSize * maxBlobSize * depthProcessed.getWidth() * depthProcessed.getHeight(),
 							   maxNumBlobs, findHoles, useApproximation);
 	
 	depthProcessed.resetROI();
@@ -278,7 +303,7 @@ void testApp::update() {
 	for (int i = 0; i < depthContours.blobs.size(); i++) 
     {
 		ofxCvBlob &blob = depthContours.blobs[i];
-        ofRectangle depthROI(blob.boundingRect.x + x0, blob.boundingRect.y + y0, blob.boundingRect.width, blob.boundingRect.height);
+        ofRectangle depthROI(blob.boundingRect.x + roiArea.x, blob.boundingRect.y + roiArea.y, blob.boundingRect.width, blob.boundingRect.height);
 		depthOrig.setROI(depthROI);
 		
 		double minValue, maxValue;
@@ -291,6 +316,9 @@ void testApp::update() {
 		newPoint.y = maxLoc.y + depthROI.y;
 		newPoint.z = maxValue; //+ depthOffset) * depthScale;
         blob.centroid = newPoint;
+
+		// mains ouverte/fermée
+		int cornerCount = blob.nPts;
     }
     
 	blobTracker.trackBlobs(depthContours.blobs);
@@ -299,6 +327,9 @@ void testApp::update() {
 	curPoint += (newPoint - curPoint) * lerpSpeed;
 	points[i][pointHead] = curPoint;*/	
 	
+    // kinect motor
+    kinect.setCameraTiltAngle(kinectOrientation);
+
 	
 }
 
@@ -398,7 +429,7 @@ void testApp::draw()
     
     blobTracker.draw(0,0);
     
-    if (gui.isOn())
+    if (true)//(gui.isOn())
     {
     
         // draw active area rectangle
@@ -441,6 +472,7 @@ void testApp::blobOn( float x, float y, float z, int id, int order ) {
     float scaledX = (x*ofGetWidth()/depthProcessed.getWidth() - activeArea.x) / activeArea.width * ofGetWidth();
     float scaledY = (y*ofGetHeight()/depthProcessed.getHeight() - activeArea.y) / activeArea.height * ofGetHeight();
     float scaledZ = (z - (bottomThreshold * MAXDEPTH)) / ((topThreshold - bottomThreshold)*MAXDEPTH);
+	scaledZ = min(scaledZ,1.0f);
     cursors[id] = server.addCursor(scaledX, scaledY, scaledZ);
 }
 
@@ -450,6 +482,7 @@ void testApp::blobMoved( float x, float y, float z, int id, int order) {
     float scaledX = (x*ofGetWidth()/depthProcessed.getWidth() - activeArea.x) / activeArea.width * ofGetWidth();
     float scaledY = (y*ofGetHeight()/depthProcessed.getHeight() - activeArea.y) / activeArea.height * ofGetHeight();
     float scaledZ = (z - (bottomThreshold * MAXDEPTH)) / ((topThreshold - bottomThreshold)*MAXDEPTH);
+	scaledZ = min(scaledZ,1.0f);
     server.updateCursor(cursors[id],scaledX, scaledY, scaledZ);
 	//handForce.set(0.5 * b.deltaLoc.x, 0.5 * b.deltaLoc.y, 0.0);
 	// note that we need to position of the blobs to the screen
@@ -515,6 +548,7 @@ void testApp::mousePressed(int x, int y, int button){
             float dist = sqrt(diffx*diffx + diffy*diffy);
             if (dist < activeAreaVertices[i].radius){
                 activeAreaVertices[i].bBeingDragged = true;
+				gui.hide();
             } else {
                 activeAreaVertices[i].bBeingDragged = false;
             }
@@ -530,5 +564,6 @@ void testApp::mouseReleased(int x, int y, int button){
 	for (int i = 0; i < 2; i++){
 		activeAreaVertices[i].bBeingDragged = false;	
 	}
+	gui.show();
 }
 

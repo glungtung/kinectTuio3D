@@ -32,7 +32,7 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * ***********************************************************************/
-#define   ofSetHexColor ofSetColor
+//#define   ofSetHexColor ofSetColor
 
 #include "ofxSimpleGuiToo.h"
 

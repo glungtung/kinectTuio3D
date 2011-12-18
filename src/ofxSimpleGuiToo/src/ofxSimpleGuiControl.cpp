@@ -33,7 +33,7 @@
  *
  * ***********************************************************************/ 
 
-#define   ofSetHexColor ofSetColor
+//#define   ofSetHexColor ofSetColor
 
 #include "ofxSimpleGuiControl.h"
 
